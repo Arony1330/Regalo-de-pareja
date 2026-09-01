@@ -126,7 +126,7 @@ const listaRecuerdos = [
             "Uno de esos días que poco a poco hicieron que empezáramos a sentir algo más.",
 
         imagenes: [
-            "images/Cita/cita1.png"
+            "images/cita/cita1.png"
         ]
     },
 
