@@ -1,0 +1,762 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    color: #4a2c35;
+
+    background: linear-gradient(135deg,
+            #f8e8ee,
+            #f7d6e0);
+
+}
+
+
+/* ==========================================
+   TARJETA
+========================================== */
+
+.tarjeta {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ==========================================
+   TÍTULOS
+========================================== */
+
+h1 {
+
+    margin-bottom: 10px;
+
+    font-size: 52px;
+
+}
+
+
+h2 {
+
+    margin-bottom: 25px;
+
+    font-size: 38px;
+
+}
+
+
+h3 {
+
+    font-size: 25px;
+
+}
+
+
+p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+button {
+
+    padding: 14px 30px;
+
+    margin: 10px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: #c75c75;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        background 0.2s;
+
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+button:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   OCULTO
+========================================== */
+
+.oculto {
+
+    display: none;
+
+}
+
+
+/* ==========================================
+   CORAZÓN
+========================================== */
+
+.corazonInicio {
+
+    font-size: 80px;
+
+    margin-bottom: 20px;
+
+    animation:
+        latido 1.3s infinite;
+
+    cursor: pointer;
+
+}
+
+
+@keyframes latido {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* ==========================================
+   IMAGEN
+========================================== */
+
+#imagenRecuerdo {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* ==========================================
+   ANIMACIÓN DE FOTOGRAFÍA
+========================================== */
+
+.cambiarFoto {
+
+    animation:
+        cambiarFoto 0.5s ease;
+
+}
+
+
+@keyframes cambiarFoto {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.95);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ==========================================
+   CONTROLES DE FOTOS
+========================================== */
+
+.controlesFotos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 5px auto 20px;
+
+}
+
+
+.controlesFotos button {
+
+    width: 45px;
+
+    height: 45px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+}
+
+
+#contadorFotos {
+
+    min-width: 50px;
+
+    font-size: 15px;
+
+    opacity: 0.7;
+
+}
+
+
+/* ==========================================
+   CONTROLES DE RECUERDOS
+========================================== */
+
+.controlesRecuerdos {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+
+/* ==========================================
+   CONTADOR
+========================================== */
+
+#contadorRecuerdo {
+
+    font-size: 15px;
+
+    opacity: 0.6;
+
+    margin-top: -10px;
+
+}
+
+
+/* ==========================================
+   MENSAJE FINAL
+========================================== */
+
+.mensajeFinalRecuerdos {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: #f8e1e8;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================
+   CARTA
+========================================== */
+
+#sobre {
+
+    margin: 30px auto;
+
+    padding: 40px;
+
+    max-width: 400px;
+
+    background: #f5d6df;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.corazon {
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+
+    animation:
+        latido 1.3s infinite;
+
+}
+
+.cartaOculta {
+
+    display: none;
+
+}
+
+
+/* ==========================================
+   CARTA DIGITAL
+========================================== */
+
+#contenidoCarta {
+
+    margin: 30px auto;
+
+    padding: 40px;
+
+    max-width: 550px;
+
+    background: #fffdfd;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+
+    text-align: left;
+
+    position: relative;
+
+    animation:
+        aparecerCarta 1s ease;
+
+}
+
+
+/* Decoración de la carta */
+
+#contenidoCarta::before {
+
+    content: "❤️";
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+
+}
+
+
+#contenidoCarta h3 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 28px;
+
+}
+
+
+#contenidoCarta p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==========================================
+   TEXTO INICIAL
+========================================== */
+
+.subtitulo {
+
+    font-size: 20px;
+
+    opacity: 0.8;
+
+}
+
+
+.fechaInicio {
+
+    font-size: 14px;
+
+    opacity: 0.5;
+
+    letter-spacing: 2px;
+
+    margin-top: 25px;
+
+}
+
+
+/* ==========================================
+   ANIMACIÓN DE ENTRADA
+========================================== */
+
+@keyframes entradaSuave {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+#inicio {
+
+    animation:
+        entradaSuave 1s ease;
+
+}
+
+
+/* ==========================================
+   CORAZONES FLOTANTES
+========================================== */
+
+#corazones {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: -1;
+
+}
+
+
+.corazonFlotante {
+
+    position: absolute;
+
+    bottom: -50px;
+
+    font-size: 20px;
+
+    opacity: 0.5;
+
+    animation:
+        flotar 6s linear forwards;
+
+}
+
+
+@keyframes flotar {
+
+    from {
+
+        transform:
+            translateY(0) rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 0.5;
+
+    }
+
+    80% {
+
+        opacity: 0.5;
+
+    }
+
+    to {
+
+        transform:
+            translateY(-110vh) rotate(20deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 10px;
+
+    }
+
+
+    .tarjeta {
+
+        padding: 30px 20px;
+
+        border-radius: 20px;
+
+    }
+
+
+    h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    h3 {
+
+        font-size: 22px;
+
+    }
+
+
+    p {
+
+        font-size: 16px;
+
+    }
+
+
+    button {
+
+        width: 90%;
+
+        max-width: 300px;
+
+    }
+
+
+    #imagenRecuerdo {
+
+        height: 350px;
+
+    }
+
+
+    #contenidoCarta {
+
+        padding: 25px;
+
+    }
+
+
+    .controlesFotos button {
+
+        width: 45px;
+
+    }
+
+}
+
+/* ==========================================
+   SECCIÓN DE VIDEOS
+========================================== */
+
+#videoRecuerdo {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    max-height: 500px;
+
+    display: block;
+
+    margin: 25px auto;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+
+    background: black;
+
+}
+
+
+.subtituloVideos {
+
+    font-size: 17px;
+
+    opacity: 0.7;
+
+    margin-top: -15px;
+
+}
+
+
+.controlesVideos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 15px auto;
+
+}
+
+
+.controlesVideos button {
+
+    width: 45px;
+
+    height: 45px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border-radius: 50%;
+
+}
+
+
+#contadorVideos {
+
+    min-width: 50px;
+
+    font-size: 15px;
+
+    opacity: 0.7;
+
+}
+
+
+#videos h3 {
+
+    margin-top: 25px;
+
+}
+
+
+#videos #descripcionVideo {
+
+    max-width: 500px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
